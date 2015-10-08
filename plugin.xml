@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	id="com.equitybankgroup.SecugenPlugin"
+	version="0.0.1">
+	<name>SecugenPlugin</name>
+	<description>Secugen Finger Print Plugin For Android</description>
+	<license>Apache 2.0</license>
+	<keywords>cordova,SecugenPlugin</keywords>
+	<repo></repo>
+	<issue></issue>
+	<js-module src="www/SecugenPlugin.js" name="SecugenPlugin">
+		<clobbers target="SecugenPlugin" />
+	</js-module>
+	<!-- android -->
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="SecugenPlugin" >
+				<param name="android-package" value="com.equitybankgroup.SecugenPlugin.SecugenPlugin"/>
+			</feature>
+		</config-file>
+		<!--Source Files-->
+		<source-file src="src/android/SecugenPlugin.java" target-dir="src/com/equitybankgroup/Secugen/"/>
+		<source-file src="src/android/FingerPrintController.java" target-dir="src/com/equitybankgroup/Secugen/" />
+		<source-file src="src/android/SecureServerConnect.java" target-dir="src/com/equitybankgroup/Secugen/" />
+		<source-file src="src/android/ServerConnect.java" target-dir="src/com/equitybankgroup/Secugen/" />
+		<!--Libraries-->
+		<source-file src="libs/FDxSDKProAndroid.jar" target-dir="libs/"/>
+		<source-file src="libs/armeabi.jar" target-dir="libs/"/>
+		<source-file src="libs/commons-codec-1.6.jar" target-dir="libs/"/>
+		<source-file src="libs/eq_bio_lib.jar" target-dir="libs/"/>
+	</platform>
+</plugin>

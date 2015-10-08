@@ -1,0 +1,18 @@
+{
+    "version": "0.1",
+    "name": "com.equitybankgroup.SecugenPlugin",
+    "cordova_name": "Secugen Plugin",
+    "description": "Secugen Plugin",
+    "license": "Apache 2.0",
+    "repo": "",
+    "issue": "",
+    "keywords": [
+        "cordova",
+        "device"
+    ],
+    "platforms": [
+        "android",
+    ],
+    "engines": [],
+    "englishdoc": ""
+}
